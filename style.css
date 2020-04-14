@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    justify-content: space-around;
+    background-color: #130f40;
+}
+
+.content-header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.content-header h1{
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 3vw;
+}
+
+.refresh{
+    position: relative;
+    margin-right: 0px;
+    top: 50%;
+    transform: translate(0,-25%);
+}
+
+.refresh-btn{
+    background-color: transparent;
+    float: right;
+    border: none;
+    height: 10vh;
+    border-radius: 50%;
+    width: 5vw;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.refresh-btn:hover{
+    background-color: #686de0;
+    border-radius: 0;
+}
+
+.main-summary{
+    width: 100%;
+    height: 50vh;
+    display: inline-flex;
+    position: relative;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.confirmed, .recovered, .active, .deaths{
+    width: 20vw;
+    height: 50vh;
+    text-align: center;
+    transition: 0.5s ease;
+}
+
+.number{
+    position: relative;
+    top: 45%;
+    font-size: 3vw;
+}
+
+.title{
+    font-size: 2vw;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+.inc-24h{
+    font-size: 1.5vw;
+    margin-top: 20px;
+}
+
+
+.active .inc-24h{
+    color: transparent;
+}
+
+.confirmed{
+    color: #eb4d4b;
+    border: 0.15vw solid #eb4d4b;
+    border-radius: 3vw;
+}
+
+.confirmed:hover{
+    background-color: #eb4d4b;
+    color: white;
+}
+
+.active{
+    color: #0984e3;
+    border: 0.15vw solid #0984e3;
+    border-radius: 3vw;
+}
+
+.active:hover{
+    background-color: #0984e3;
+    color: white;
+}
+
+.recovered{
+    color: #20bf6b;
+    border: 0.15vw solid #20bf6b;
+    border-radius: 3vw;
+}
+
+.recovered:hover{
+    background-color: #20bf6b;
+    color: white;
+}
+
+.deaths{
+    color: #535c68;
+    border: 0.15vw solid #535c68;
+    border-radius: 3vw;
+}
+
+.deaths:hover{
+    background-color: #535c68;
+    color: white;
+}
+
+.last-updated{
+    position: relative;
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: 5%;
+    font-size: 1.5vw;
+}

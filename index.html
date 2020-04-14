@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+    <title>Covid19 Tracker</title>
+</head>
+<body onload="updater.update()">
+    <div class="header">
+        <div class="content-header">
+            <img src="data:image/png;base64,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">
+            <h1>COVID-19 Tracker India</h1>
+        </div>
+        <div class="refresh">
+            <button class="refresh-btn"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="30" height="30"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,17.2c-17.01998,0 -32.66383,6.21171 -44.67969,16.48333c-1.64003,1.30561 -2.43687,3.40213 -2.07805,5.46745c0.35882,2.06532 1.81609,3.77022 3.80038,4.44616c1.98429,0.67594 4.17929,0.21517 5.72428,-1.20164c10.02307,-8.56811 22.99492,-13.72865 37.23307,-13.72865c29.79361,0 54.18567,22.57745 57.05339,51.6h-16.92005l22.93333,34.4l22.93333,-34.4h-17.49114c-2.93142,-35.25049 -32.51591,-63.06667 -68.50886,-63.06667zM22.93333,57.33333l-22.93333,34.4h17.49115c2.93142,35.25049 32.51591,63.06667 68.50885,63.06667c17.01998,0 32.66383,-6.21171 44.67969,-16.48333c1.64004,-1.30561 2.43688,-3.40213 2.07807,-5.46746c-0.35882,-2.06533 -1.81609,-3.77024 -3.80039,-4.44617c-1.9843,-0.67594 -4.1793,-0.21516 -5.72429,1.20165c-10.02308,8.56811 -22.99493,13.72864 -37.23308,13.72864c-29.79361,0 -54.18567,-22.57744 -57.05339,-51.6h16.92005z"></path></g></g></svg></button>
+        </div>
+    </div>
+    <div class="main-summary">
+        <div class="confirmed">
+            <div class="title">Confirmed</div>
+            <div class="inc-24h" id="confirm-delta">[+200]</div>
+            <div class="number" id="confirm-cases">10,432</div>
+        </div>
+        <div class="active">
+            <div class="title">Active</div>
+            <div class="inc-24h">blank</div>
+            <div class="number" id="active-cases">9,122</div>
+        </div>
+        <div class="recovered">
+            <div class="title">Recovered</div>
+            <div class="inc-24h" id="recovered-delta">[+25]</div>
+            <div class="number" id="recovered-cases">1,226</div>
+        </div>
+        <div class="deaths">
+            <div class="title">Deceased</div>
+            <div class="inc-24h" id="death-delta">[+20]</div>
+            <div class="number" id="death-cases">432</div>
+        </div>        
+    </div>
+    <div class="last-updated" id="time">Last Updated:</div>    
+    <p style="text-align: center;">This app doesn't guarantee accurate information. 
+        It is NOT an official source of information. 
+        It is a personal project and based on an external API.
+    </p>
+    <script src="app.js"></script>
+</body>
+</html>
